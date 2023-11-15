@@ -1,0 +1,232 @@
+/**
+ * Set up a decent box model on the root element
+ */
+html {
+  box-sizing: border-box;
+}
+
+/**
+ * Make all elements from the DOM inherit from the parent box-sizing
+ * Since `*` has a specificity of 0, it does not override the `html` value
+ * making all elements inheriting from the root box-sizing value
+ * See: https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+ */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/**
+ * Basic styles for links
+ */
+a {
+  color: rgb(229, 0, 80);
+  text-decoration: none;
+}
+a:hover, a:active, a:focus, a:focus-within {
+  color: rgb(34, 34, 34);
+  text-decoration: underline;
+}
+
+/**
+ * Basic typography style for copy text
+ */
+body {
+  color: rgb(34, 34, 34);
+  font: normal 125%/1.4 "Open Sans", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+/**
+ * Clear inner floats
+ */
+.clearfix::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+/**
+ * Main content containers
+ * 1. Make the container full-width with a maximum width
+ * 2. Center it in the viewport
+ * 3. Leave some space on the edges, especially valuable on small screens
+ */
+.container {
+  max-width: 1180px; /* 1 */
+  margin-left: auto; /* 2 */
+  margin-right: auto; /* 2 */
+  padding-left: 20px; /* 3 */
+  padding-right: 20px; /* 3 */
+  width: 100%; /* 1 */
+}
+
+/**
+ * Hide text while making it readable for screen readers
+ * 1. Needed in WebKit-based browsers because of an implementation bug;
+ *    See: https://code.google.com/p/chromium/issues/detail?id=457146
+ */
+.hide-text {
+  overflow: hidden;
+  padding: 0; /* 1 */
+  text-indent: 101%;
+  white-space: nowrap;
+}
+
+/**
+ * Hide element while making it readable for screen readers
+ * Shamelessly borrowed from HTML5Boilerplate:
+ * https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css#L119-L133
+ */
+.visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(10px);
+}
+header a {
+  color: #333;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+}
+header button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+header img {
+  width: 100px;
+  height: auto;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px;
+  background-color: #B5D219;
+  color: white;
+}
+
+.content {
+  display: flex;
+}
+
+div {
+  margin-right: 20px;
+}
+
+h1 {
+  font-size: 18px;
+}
+
+p {
+  margin: 5px 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.home {
+  position: relative;
+  z-index: 1;
+}
+.home img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: opacity 0.3s ease;
+}
+.home .titre {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 2em;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: "Arial", sans-serif;
+}
+
+.mesure {
+  text-align: center;
+  margin: 50px 0 126px;
+}
+.mesure di .text-salade {
+  padding: 20px;
+  max-width: 400px;
+  margin: 50px 0 0 126px;
+  color: #333;
+}
+.mesure h2 {
+  color: #B5D219;
+  margin: 0;
+}
+.mesure .description {
+  margin-top: 10px;
+  color: #333;
+  text-align: left;
+  top: -20px;
+  margin: 50px 0 0 126px;
+  position: relative;
+}
+
+.preparation {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.text-preparation {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(0, -50%);
+  text-align: center;
+  color: white;
+  background-color: #B5D219;
+  padding: 20px;
+  width: 80%;
+  max-width: 400px;
+}
+
+h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+/*# sourceMappingURL=style.css.map */

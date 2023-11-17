@@ -180,15 +180,14 @@ html, body {
   text-align: center;
   margin: 50px 0 126px;
 }
-.mesure di .text-salade {
+.mesure .text-salade {
   padding: 20px;
   max-width: 400px;
   margin: 50px 0 0 126px;
   color: #333;
 }
-.mesure h2 {
-  color: #fffffc;
-  margin: 0;
+.mesure .text-salade h2 {
+  color: #B5D219;
 }
 .mesure .description {
   margin-top: 10px;
@@ -229,7 +228,7 @@ img {
   padding: 20px;
 }
 
-h2 {
+.menu-surmesure {
   margin: 0;
   color: #B2D234;
 }

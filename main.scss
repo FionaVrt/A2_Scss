@@ -83,8 +83,8 @@ html, body {
       
   }
 
-  h2 {
-      color: #B5D219;
+  h2  {
+      color: #fffffc;
       margin: 0;
   }
 
@@ -122,11 +122,25 @@ img {
   max-width: 400px;
 }
 
-h3 {
-  margin: 0;
-  font-size: 18px; 
+.menu {
+  text-align: center;
+  padding: 20px; 
 }
 
+h2 {
+  margin: 0; 
+  color: #B2D234;
+}
+
+p {
+  font-size: 14px; 
+  margin-top: 10px; 
+}
+
+
+.pr{
+  color: white;
+}
 
 
 

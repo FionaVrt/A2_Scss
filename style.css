@@ -187,7 +187,7 @@ html, body {
   color: #333;
 }
 .mesure h2 {
-  color: #B5D219;
+  color: #fffffc;
   margin: 0;
 }
 .mesure .description {
@@ -224,9 +224,23 @@ img {
   max-width: 400px;
 }
 
-h3 {
+.menu {
+  text-align: center;
+  padding: 20px;
+}
+
+h2 {
   margin: 0;
-  font-size: 18px;
+  color: #B2D234;
+}
+
+p {
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.pr {
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */
